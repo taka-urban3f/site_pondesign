@@ -1,0 +1,51 @@
+// --------------------------------------------------------
+// _news.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.p-secNews {
+    max-width: 850px;
+    margin: 70px auto 0;
+    display: flex;
+    column-gap: 50px;
+
+    &__list {
+        &__item {
+            display: flex;
+
+            &+& {
+                margin-top: 15px;
+            }
+
+            &__date {
+                display: block;
+                min-width: 104px;
+                @include b.f_montserrat(400);
+                font-size: b.p2r(14);
+                line-height: calc(25.2 / 14);
+                letter-spacing: 0.1em;
+            }
+
+            &__desc {
+                font-size: b.p2r(14);
+                line-height: calc(25.2 / 14);
+                letter-spacing: 0.05em;
+            }
+
+            &__cat {
+                display: inline-block;
+                margin-right: 20px;
+                min-width: 80px;
+                padding: 2px 10px;
+                background-color: var(--color-gray);
+                border-radius: 100px;
+                font-weight: 900;
+                font-size: b.p2r(12);
+                line-height: calc(21.6 / 12);
+                letter-spacing: 0.05em;
+                text-align: center;
+            }
+        }
+    }
+}

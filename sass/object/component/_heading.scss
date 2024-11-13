@@ -1,0 +1,25 @@
+// --------------------------------------------------------
+// _heading.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.c-heading {
+    @include b.f_montserrat(700);
+    font-size: b.p2r(36);
+    line-height: calc(43.2 / 36);
+    letter-spacing: 0.05em;
+    color: var(--color-purple);
+    text-align: center;
+
+    &--news {
+        text-align-last: left;
+    }
+
+    &__sub {
+        display: block;
+        @include b.f_zenkakugo(700);
+        font-size: b.p2r(13);
+        line-height: calc(15.6 / 13);
+    }
+}
