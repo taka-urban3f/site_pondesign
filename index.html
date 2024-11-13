@@ -14,85 +14,94 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@400;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
-    <header>
-        <h1><a href=""><img src="img/logo.svg" alt="PON DESIGN"></a></h1>
-        <ul>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SERVICE</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">COMPANY</a></li>
-            <li><a href="#">RECRUIT</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
+    <header class="l-header">
+        <h1 class="l-header__heading"><a href="index.html"><img src="img/logo.svg" alt="PON DESIGN"></a></h1>
+        <nav>
+            <ul class="l-header__gnav">
+                <li class="l-header__gnav__item"><a href="#">NEWS</a></li>
+                <li class="l-header__gnav__item"><a href="#">SERVICE</a></li>
+                <li class="l-header__gnav__item"><a href="#">WORKS</a></li>
+                <li class="l-header__gnav__item"><a href="#">COMPANY</a></li>
+                <li class="l-header__gnav__item"><a href="#">RECRUIT</a></li>
+                <li class="l-header__gnav__item"><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>WEB DESIGN SPECIALIST<span>お客様の夢を叶えるWebサイトを制作</span></h2>
-            <a href="#">CONTACT</a>
+        <section class="p-secMV">
+            <h2 class="p-secMV__heading">WEB DESIGN SPECIALIST<span class="p-secMV__heading__text">お客様の夢を叶えるWebサイトを制作</span></h2>
+            <a href="#" class="c-button--transparent">CONTACT</a>
         </section>
 
-        <section>
-            <h2>SERVICE<span>事業内容</span></h2>
-            <ul>
-                <li>
+        <section class="p-secService">
+            <h2 class="c-heading--service p-secService__heading">SERVICE<span class="c-heading__sub">事業内容</span></h2>
+            <ul class="p-service__list">
+                <li class="p-service__list__item">
                     <img src="img/service1.jpg" alt="">
-                    <h3>Webサイト制作</h3>
-                    <p>新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+                    <h3 class="p-service__list__item__heading">Webサイト制作</h3>
+                    <p class="p-service__list__item__text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
                 </li>
             </ul>
-            <a href="#">MORE</a>
+            <a href="#" class="c-button">MORE</a>
         </section>
 
-        <section>
-            <div class="ctn">
-                <h2>WORKS<span>制作実績</span></h2>
-                <p>様々なジャンルのWebサイト制作が可能です。
-                    ご購入やお申込み数の増加などを実現します！</p>
-                <a href="#">MORE</a>
+        <section class="p-secWorks">
+            <div class="p-secWorks__box">
+                <div class="p-secWorks__box__inner">
+                    <h2 class="c-heading p-secWorks__heading">WORKS<span class="c-heading__sub">制作実績</span></h2>
+                    <p class="p-secWorks__text">様々なジャンルのWebサイト制作が可能です。
+                        ご購入やお申込み数の増加などを実現します！</p>
+                    <a href="#" class="c-button">MORE</a>
+                </div>
             </div>
-            <div class="slide_ctn">
-                <div class="swiper"><img src="img/slider1.jpg" alt=""></div>
+            <div class="p-secWorks__sliderCtn">
+                <div class="swiper">
+                    <div class="p-secWorks__sliderItem"><img src="img/slider1.jpg" alt=""></div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>COMPANY<span>私たちについて</span></h2>
-            <p>サイトのゴール = 夢を叶えること</p>
-            <p>お客様の夢を叶えること。
+        <section class="p-secCompany">
+            <h2 class="c-heading p-secCompany__heading">COMPANY<span class="c-heading__sub">私たちについて</span></h2>
+            <p class="p-secCompany__catch">サイトのゴール = 夢を叶えること</p>
+            <p class="p-secCompany__text">お客様の夢を叶えること。
                 それがWebサイトのゴールであり、私たちが目指すことです。
                 だからこそちゃんと成果を出すサイトを全力でお作りします。
                 お客様の笑顔を見たい。
                 夢を実現する手助けをさせてください。</p>
-            <a href="#">MORE</a>
+            <a href="#" class="c-button">MORE</a>
         </section>
 
-        <section>
-            <h2>RECRUIT<span>採用情報</span></h2>
-            <p>私たちと一緒に働きませんか？</p>
-            <a href="#">MORE</a>
+        <section class="p-secRecruit">
+            <h2 class="c-heading p-secRecruit__heading">RECRUIT<span class="c-heading__sub">採用情報</span></h2>
+            <p class="p-secRecruit__text">私たちと一緒に働きませんか？</p>
+            <a href="#" class="c-button">MORE</a>
         </section>
 
-        <section>
-            <h2>CONTACT<span>お問い合わせ</span></h2>
-            <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
-            <a href="#">MORE</a>
+        <section class="p-secContact">
+            <h2 class="c-heading p-secContact__heading">CONTACT<span class="c-heading__sub">お問い合わせ</span></h2>
+            <p class="p-secContact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+            <a href="#" class="c-button">MORE</a>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SERVICE</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">COMPANY</a></li>
-            <li><a href="#">RECRUIT</a></li>
-            <li><a href="#">CONTACT</a></li>
+    <footer class="l-footer">
+        <ul class="l-footer__list">
+            <li class="l-footer__list__item"><a href="#">HOME</a></li>
+            <li class="l-footer__list__item"><a href="#">NEWS</a></li>
+            <li class="l-footer__list__item"><a href="#">SERVICE</a></li>
+            <li class="l-footer__list__item"><a href="#">WORKS</a></li>
+            <li class="l-footer__list__item"><a href="#">COMPANY</a></li>
+            <li class="l-footer__list__item"><a href="#">RECRUIT</a></li>
+            <li class="l-footer__list__item"><a href="#">CONTACT</a></li>
         </ul>
-        <span>&copy; PON DESIGN</span>
+        <span class="l-footer__copy">&copy; PON DESIGN</span>
     </footer>
 </body>
 
