@@ -1,5 +1,5 @@
 // --------------------------------------------------------
-// base.scss
+// _base.scss
 // --------------------------------------------------------
 
 html {
@@ -12,6 +12,7 @@ html {
         Meiryo,
         sans-serif;
     font-weight: 400;
+    line-height: 1;
     font-style: normal;
 }
 
@@ -26,4 +27,26 @@ dt {
 
 @function p2r($pixel) {
     @return $pixel / 16 * 1rem;
+}
+
+@mixin f_zenkakugo($weight) {
+    font-family: "Zen Kaku Gothic New",
+        "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    font-weight: $weight;
+}
+
+@mixin f_montserrat($weight) {
+    font-family: "Montserrat",
+        "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    font-weight: $weight;
 }

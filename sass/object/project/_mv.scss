@@ -1,0 +1,74 @@
+// --------------------------------------------------------
+// _mv.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.p-secMV {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &__inner {
+        margin: 0 auto;
+    }
+
+    &__heading {
+        text-align: center;
+        @include b.f_montserrat(700);
+        font-size: b.p2r(72);
+        letter-spacing: 0.05em;
+        color: white;
+
+        &__text {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            @include b.f_zenkakugo(400);
+            font-size: b.p2r(24);
+            line-height: calc(43.2 / 24);
+            letter-spacing: 0.1em;
+        }
+    }
+
+    &__ctn {
+        &__promptScroll {
+            position: absolute;
+            bottom: 90px;
+            writing-mode: vertical-rl;
+            @include b.f_montserrat(700);
+            font-size: b.p2r(12);
+            letter-spacing: 0.2em;
+            color: white;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 80px;
+                bottom: -90px;
+                left: 50%;
+                background-color: white;
+                animation: lineDown 1.5s ease infinite;
+            }
+        }
+    }
+}
+
+@keyframes lineDown {
+    0% {
+        height: 0;
+        bottom: -10px;
+    }
+    50% {
+        height: 80px;
+        bottom: -90px;
+    }
+    100% {
+        height: 0;
+    }
+}

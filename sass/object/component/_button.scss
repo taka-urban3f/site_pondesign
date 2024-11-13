@@ -1,0 +1,33 @@
+// --------------------------------------------------------
+// _button.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.c-button {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 18px 85px;
+    background-image: linear-gradient(to right, #7633A4 0%, #250D65 100%);
+    border-radius: 100px;
+    @include b.f_montserrat(700);
+    font-size: b.p2r(14);
+    line-height: calc(19.6 / 14);
+    letter-spacing: 0.1em;
+    color: white;
+
+    &--transparent {
+        background-image: initial;
+        border: 1px solid white;
+    }
+
+    &::before {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0da";
+        right: 21px;
+    }
+}
