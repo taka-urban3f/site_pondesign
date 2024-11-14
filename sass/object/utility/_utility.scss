@@ -5,5 +5,11 @@
 @use '../../foundation/base'as b;
 
 .u-wrapper {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.u-wrapper70 {
+    padding-left: 70px;
+    padding-right: 70px;
 }

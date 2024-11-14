@@ -5,7 +5,7 @@
 @use '../../foundation/base'as b;
 
 .p-secNews {
-    max-width: 850px;
+    max-width: 910px;
     margin: 70px auto 0;
     display: flex;
     column-gap: 50px;
@@ -28,13 +28,15 @@
             }
 
             &__desc {
+                display: flex;
+                align-items: flex-start;
                 font-size: b.p2r(14);
                 line-height: calc(25.2 / 14);
                 letter-spacing: 0.05em;
             }
 
             &__cat {
-                display: inline-block;
+                display: block;
                 margin-right: 20px;
                 min-width: 80px;
                 padding: 2px 10px;
