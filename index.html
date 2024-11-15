@@ -14,6 +14,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper.min.css" />
 
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -91,8 +92,13 @@
         <section class="p-secWorks u-wrapper70">
             <div class="p-secWorks__sliderCtn">
                 <div class="swiper">
-                    <div class="p-secWorks__sliderItem"><img src="img/slider1.jpg" alt=""></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-secWorks__sliderItem"><img src="img/slider1.jpg" alt=""></div><div class="swiper-slide p-secWorks__sliderItem"><img src="img/slider2.jpg" alt=""></div><div class="swiper-slide p-secWorks__sliderItem"><img src="img/slider3.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="p-secWorks__textCtn">
                 <div class="p-secWorks__textCtn__inner">
@@ -139,6 +145,9 @@
         </ul>
         <span class="l-footer__copy">&copy; PON DESIGN</span>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
