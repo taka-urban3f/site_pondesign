@@ -1,0 +1,45 @@
+// --------------------------------------------------------
+// _company.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.p-secCompany {
+    max-width: 1440px;
+    margin: 40px auto 40px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-image: url(../img/bg_company.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% auto;
+
+    &__catch {
+        position: relative;
+        width: fit-content;
+        margin: 26.5px auto 0;
+        font-weight: 900;
+        font-size: b.p2r(40);
+        letter-spacing: 0.05em;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 95%;
+            height: 30%;
+            background-color: #F5F534;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 33.3%);
+            z-index: -1;
+        }
+    }
+
+    &__text {
+        margin: 40px 0 30px;
+        font-size: b.p2r(15);
+        line-height: calc(27 / 15);
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+}

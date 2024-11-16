@@ -1,0 +1,18 @@
+// --------------------------------------------------------
+// _contact.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.p-secContact {
+    padding: 70px 0;
+    background-color: var(--color-whitishGray);
+
+    &__text {
+        margin: 30px 0 20px;
+        font-size: b.p2r(15);
+        line-height: calc(27 / 15);
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+}
