@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @use 'layout/header';
+@use 'layout/footer';
 @use 'object/project/mv';
 @use 'object/project/news';
 @use 'object/project/service';
@@ -10,4 +11,5 @@
 @use 'object/project/contact';
 @use 'object/component/button';
 @use 'object/component/heading';
+@use 'object/component/toTop';
 @use 'object/utility/utility';

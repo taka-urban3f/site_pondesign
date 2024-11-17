@@ -1,0 +1,31 @@
+// --------------------------------------------------------
+// _footer.scss
+// --------------------------------------------------------
+
+@use '../foundation/base'as b;
+
+.l-footer {
+    padding: 60px 0;
+    background-color: var(--color-mostBlack);
+    @include b.f_montserrat(400);
+
+    &__list {
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        font-size: b.p2r(12);
+        line-height: calc(21.6 / 12);
+        letter-spacing: 0.1em;
+        color: white;
+    }
+
+    &__copy {
+        display: block;
+        font-size: b.p2r(10);
+        line-height: calc(18 / 10);
+        letter-spacing: 0.05em;
+        color: var(--color-moreDarkGray);
+        text-align: center;
+    }
+}

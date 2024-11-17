@@ -8,6 +8,8 @@
     --color-lightGray: #F0F0F0;
     --color-darkGray: #C0C0C0;
     --color-whitishGray: #F7F7F7;
+    --color-mostBlack: #120E19;
+    --color-moreDarkGray: #A798B7;
 }
 
 html {
@@ -23,6 +25,7 @@ html {
     line-height: 1;
     font-style: normal;
     color: #333333;
+    scroll-behavior: smooth;
 }
 
 img {
