@@ -12,6 +12,12 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    transition: height 0.3s ease, background-color 0.3s ease;
+
+    &--hasScrolled {
+        height: 64px;
+        background-color: var(--color-darkPurple);
+    }
 
     &__heading {
         width: 160px;
@@ -25,5 +31,24 @@
         line-height: calc(25.2 / 14);
         letter-spacing: 0.05em;
         color: white;
+
+        &__item {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 0;
+                left: -2px;
+                bottom: -2px;
+                background-color: white;
+                transition: width 0.3s ease;
+            }
+
+            &:hover::after {
+                width: calc(100% + 4px);
+            }
+        }
     }
 }
