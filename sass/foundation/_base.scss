@@ -38,7 +38,7 @@ dt {
     font-weight: inherit;
 }
 
-$types: ('sp': '(max-width: 375px)', 'tab': '(max-width: 768px)');
+$types: ('sp': '(max-width: 768px)', 'tab': '(max-width: 1200px)');
 
 @mixin mq($device) {
     @media screen and #{map-get($types, $device)} {

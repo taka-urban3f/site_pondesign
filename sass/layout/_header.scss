@@ -19,8 +19,16 @@
         background-color: var(--color-darkPurple);
     }
 
+    @include b.mq(sp) {
+        height: 64px;
+    }
+
     &__heading {
         width: 160px;
+
+        @include b.mq(sp) {
+            width: 120px;
+        }
     }
 
     &__gnav {
@@ -32,8 +40,31 @@
         letter-spacing: 0.05em;
         color: white;
 
+        @include b.mq(sp) {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #7633A4, #250D65);
+            place-content: center;
+            row-gap: 20px;
+            font-size: b.p2r(16);
+            line-height: calc(28.8 / 16);
+
+            &--show {
+                display: grid;
+            }
+        }
+
         &__item {
             position: relative;
+
+            @include b.mq(sp) {
+                width: fit-content;
+                margin: 0 auto;
+            }
 
             &::after {
                 position: absolute;
@@ -48,6 +79,49 @@
 
             &:hover::after {
                 width: calc(100% + 4px);
+            }
+        }
+    }
+
+    &__humBtn {
+        $this: &;
+
+        display: none;
+        padding: 13px 5px;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+
+        @include b.mq(sp) {
+            display: block;
+        }
+
+        &__line {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            border-radius: 100px;
+            transform-origin: left;
+            transition: transform 0.3s ease;
+
+            &:nth-child(2) {
+                margin: 7px 0;
+                transform-origin: center;
+            }
+
+            #{$this}--isOn & {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translateY(-2px);
+                }
+
+                &:nth-child(2) {
+                    transform: scaleX(0);
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translateY(2px);
+                }
             }
         }
     }
