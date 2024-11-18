@@ -5,21 +5,27 @@
 @use '../../foundation/base'as b;
 
 .c-button {
+    $this: &;
+
     position: relative;
     display: block;
     width: fit-content;
     margin: 0 auto;
     padding: 18px 85px;
-    background-image: linear-gradient(to right, #7633A4 0%, #250D65 100%);
+    background-image: linear-gradient(to right, #250D65 0%, #7633A4 50%, #250D65 100%);
+    background-size: 200%, 100%;
+    background-position: 100% 0;
     border-radius: 100px;
     @include b.f_montserrat(700);
     font-size: b.p2r(14);
     line-height: calc(19.6 / 14);
     letter-spacing: 0.1em;
     color: white;
+    transition: background-position 0.3s ease;
+
 
     &--transparent {
-        background-image: initial;
+        background-image: linear-gradient(to right, #7633A4 0%, transparent 50%);
         border: 1px solid white;
     }
 
@@ -29,5 +35,14 @@
         font-weight: 900;
         content: "\f0da";
         right: 21px;
+        transition: right 0.3s ease;
+    }
+
+    &:hover {
+        background-position: 0 0;
+
+        &::before {
+            right: 16px;
+        }
     }
 }
