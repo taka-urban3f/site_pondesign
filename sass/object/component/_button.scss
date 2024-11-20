@@ -38,11 +38,15 @@
         transition: right 0.3s ease;
     }
 
-    &:hover {
-        background-position: 0 0;
+    @media (hover: hover) {
+        &:hover {
+            background-position: 0 0;
 
-        &::before {
-            right: 16px;
+            &::before {
+                right: 16px;
+            }
         }
     }
+
+
 }
