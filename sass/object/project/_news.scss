@@ -10,12 +10,31 @@
     display: flex;
     column-gap: 50px;
 
+    @include b.mq(sp) {
+        display: block;
+        margin: 40px auto 0;
+    }
+
     &__list {
+        @include b.mq(sp) {
+            margin-top: 30px;
+        }
+
         &__item {
             display: flex;
+            align-items: flex-start;
+
+            @include b.mq(sp) {
+                flex-wrap: wrap;
+
+            }
 
             &+& {
                 margin-top: 15px;
+
+                @include b.mq(sp) {
+                    margin-top: 30px;
+                }
             }
 
             &__date {
@@ -33,6 +52,11 @@
                 font-size: b.p2r(14);
                 line-height: calc(25.2 / 14);
                 letter-spacing: 0.05em;
+
+                @include b.mq(sp) {
+                    margin-top: 5px;
+                    width: 100%;
+                }
             }
 
             &__cat {
@@ -47,6 +71,10 @@
                 line-height: calc(21.6 / 12);
                 letter-spacing: 0.05em;
                 text-align: center;
+
+                @include b.mq(sp) {
+                    font-size: b.p2r(11);
+                }
             }
         }
     }

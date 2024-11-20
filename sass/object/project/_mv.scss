@@ -10,21 +10,32 @@
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     &__inner {
         margin: 0 auto;
+
+        @include b.mq(sp) {
+            margin: 0;
+            padding: 0 30px;
+        }
     }
 
     &__heading {
         text-align: center;
         @include b.f_montserrat(700);
-        // font-size: b.p2r(72);
         font-size: min(b.p2r(72), 5vw);
         letter-spacing: 0.05em;
         color: white;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(40);
+            line-height: calc(44 / 40);
+            text-align: left;
+        }
 
         &__text {
             display: block;
@@ -34,6 +45,11 @@
             font-size: b.p2r(24);
             line-height: calc(43.2 / 24);
             letter-spacing: 0.1em;
+
+            @include b.mq(sp) {
+                margin-bottom: 30px;
+                font-size: b.p2r(16);
+            }
         }
     }
 
@@ -50,6 +66,10 @@
             font-size: b.p2r(12);
             letter-spacing: 0.2em;
             color: white;
+
+            @include b.mq(sp) {
+                bottom: 60px;
+            }
 
             &::before {
                 content: '';
@@ -70,10 +90,12 @@
         height: 0;
         bottom: -10px;
     }
+
     50% {
         height: 80px;
         bottom: -90px;
     }
+
     100% {
         height: 0;
     }

@@ -29,6 +29,12 @@
         border: 1px solid white;
     }
 
+    &--sp-left {
+        @include b.mq(sp) {
+            margin-left: 0;
+        }
+    }
+
     &::before {
         position: absolute;
         font-family: "Font Awesome 5 Free";
@@ -47,6 +53,4 @@
             }
         }
     }
-
-
 }

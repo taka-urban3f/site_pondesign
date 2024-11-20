@@ -23,3 +23,11 @@
         padding-right: 30px;
     }
 }
+
+.u-spOnly {
+    display: none;
+
+    @include b.mq(sp) {
+        display: initial;
+    }
+}

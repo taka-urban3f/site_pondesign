@@ -12,14 +12,27 @@
     color: var(--color-purple);
     text-align: center;
 
+    @include b.mq(sp) {
+        font-size: b.p2r(30);
+    }
+
     &--news {
-        text-align-last: left;
+        text-align: left;
+
+        @include b.mq(sp) {
+            text-align: center;
+        }
     }
 
     &__sub {
         display: block;
+        margin-top: 5px;
         @include b.f_zenkakugo(700);
         font-size: b.p2r(13);
         line-height: calc(15.6 / 13);
+
+        @include b.mq(sp) {
+            margin-top: 3px;
+        }
     }
 }
