@@ -17,4 +17,9 @@
 .u-wrapper70 {
     padding-left: 70px;
     padding-right: 70px;
+
+    @include b.mq(tab) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

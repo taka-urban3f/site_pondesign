@@ -17,12 +17,18 @@
     background-position: right 70px top 0;
     background-size: 54% 100%;
 
+    @include b.mq(tab) {
+        background-position: right 30px top 0;
+    }
+
     &__sliderCtn {
         width: 58%;
     }
 
     &__textCtn {
         width: 42%;
+        min-width: 400px;
+
         display: grid;
         place-content: center;
 
@@ -78,18 +84,16 @@
         display: flex;
         justify-content: flex-end;
         column-gap: 8px;
-    
+
         &-bullet {
             background-color: var(--color-darkGray);
             border-radius: 50%;
             height: 8px;
             width: 8px;
-    
+
             &-active {
                 background-color: var(--color-purple);
             }
         }
     }
 }
-
-
