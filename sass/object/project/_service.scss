@@ -7,6 +7,10 @@
 .p-secService {
     margin-top: 140px;
 
+    @include b.mq(sp) {
+        margin-top: 80px;
+    }
+
     &__list {
         margin: 30px auto;
         max-width: 1110px;
@@ -14,7 +18,17 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
 
+        @include b.mq(sp) {
+            display: block;
+        }
+
         &__item {
+            @include b.mq(sp) {
+                &+& {
+                    margin-top: 40px;
+                }
+            }
+
             &__heading {
                 margin: 15px 0;
                 font-weight: 900;
@@ -22,12 +36,21 @@
                 line-height: calc(21.6 / 18);
                 letter-spacing: 0.05em;
                 text-align: center;
+
+                @include b.mq(sp) {
+                    margin: 15px 0 10px;
+                }
             }
 
             &__text {
                 font-size: b.p2r(15);
                 line-height: calc(27 / 15);
                 letter-spacing: 0.05em;
+
+                @include b.mq(sp) {
+                    font-size: b.p2r(14);
+                    line-height: calc(25 / 14);
+                }
             }
         }
     }

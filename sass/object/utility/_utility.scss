@@ -22,6 +22,11 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    @include b.mq(sp) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .u-spOnly {

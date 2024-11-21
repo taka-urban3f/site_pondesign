@@ -37,4 +37,9 @@
             }
         }
     }
+
+    @include b.mq(sp) {
+        right: 20px;
+        bottom: 10px;
+    }
 }

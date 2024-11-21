@@ -5,8 +5,14 @@
 @use '../../foundation/base'as b;
 
 .p-secContact {
+    margin-top: 40px;
     padding: 70px 0;
     background-color: var(--color-whitishGray);
+
+    @include b.mq(sp) {
+        padding: 60px 0;
+
+    }
 
     &__text {
         margin: 30px 0 20px;
@@ -14,5 +20,9 @@
         line-height: calc(27 / 15);
         letter-spacing: 0.05em;
         text-align: center;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(14);
+        }
     }
 }

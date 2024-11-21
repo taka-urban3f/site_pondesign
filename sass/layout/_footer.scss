@@ -18,6 +18,15 @@
         line-height: calc(21.6 / 12);
         letter-spacing: 0.1em;
         color: white;
+
+        @include b.mq(sp) {
+            margin: 0 30px 30px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            column-gap: 10px;
+            row-gap: 15px;
+            line-height: 1;
+        }
     }
 
     &__copy {

@@ -21,8 +21,20 @@
         background-position: right 30px top 0;
     }
 
+    @include b.mq(sp) {
+        margin-top: 70px;
+        padding-top: 0;
+        display: block;
+        background-position: left 0 top 42vw;
+        background-size: 100% 100%;
+    }
+
     &__sliderCtn {
         width: 58%;
+
+        @include b.mq(sp) {
+            width: 100%;
+        }
     }
 
     &__textCtn {
@@ -32,12 +44,22 @@
         display: grid;
         place-content: center;
 
+        @include b.mq(sp) {
+            margin-top: 20px;
+            width: 100%;
+            min-width: initial;
+        }
+
         &__text {
             margin: 30px 0;
             font-size: b.p2r(15);
             line-height: calc(27 / 15);
             letter-spacing: 0.05em;
             text-align: center;
+
+            @include b.mq(sp) {
+                font-size: b.p2r(14);
+            }
         }
     }
 }

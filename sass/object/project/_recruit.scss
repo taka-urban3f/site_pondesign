@@ -9,10 +9,19 @@
     margin: 0 auto 110px;
     display: flex;
 
+    @include b.mq(sp) {
+        margin-bottom: 40px;
+        flex-direction: column-reverse;
+    }
+
     &__textBox {
         padding: 70px 0;
         width: 40%;
         background-color: var(--color-whitishGray);
+
+        @include b.mq(sp) {
+            width: initial;
+        }
 
         &__text {
             margin: 30px 0;
@@ -20,11 +29,19 @@
             line-height: calc(27 / 15);
             letter-spacing: 0.05em;
             text-align: center;
+
+            @include b.mq(sp) {
+                font-size: b.p2r(14);
+            }
         }
     }
 
     &__imgCtn {
         width: 60%;
+
+        @include b.mq(sp) {
+            width: initial;
+        }
 
         &__img {
             height: 100%;

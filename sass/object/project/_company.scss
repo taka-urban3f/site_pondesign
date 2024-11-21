@@ -6,13 +6,20 @@
 
 .p-secCompany {
     max-width: 1440px;
-    margin: 40px auto 40px;
-    padding-top: 100px;
-    padding-bottom: 130px;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 170px;
     background-image: url(../img/bg_company.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90% auto;
+
+    @include b.mq(sp) {
+        margin: 0 auto;
+        padding: 60px 0;
+        background-image: url(../img/bg_circle_sp.png);
+        background-size: cover;
+    }
 
     &__catch {
         position: relative;
@@ -21,6 +28,14 @@
         font-weight: 900;
         font-size: b.p2r(40);
         letter-spacing: 0.05em;
+        z-index: 0;
+
+        @include b.mq(sp) {
+            margin-top: 30px;
+            font-size: b.p2r(32);
+            line-height: calc(48 / 32);
+            text-align: center;
+        }
 
         &::after {
             position: absolute;
@@ -32,6 +47,29 @@
             bottom: 0;
             transform: translate(-50%, 33.3%);
             z-index: -1;
+
+            @include b.mq(sp) {
+                display: none;
+            }
+        }
+
+        &__part {
+            @include b.mq(sp) {
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 95%;
+                    height: 30%;
+                    background-color: #F5F534;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    z-index: -1;
+                }
+            }
         }
     }
 
@@ -41,5 +79,9 @@
         line-height: calc(27 / 15);
         letter-spacing: 0.05em;
         text-align: center;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(14);
+        }
     }
 }
