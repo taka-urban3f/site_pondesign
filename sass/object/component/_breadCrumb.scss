@@ -5,6 +5,8 @@
 @use '../../foundation/base'as b;
 
 .c-breadCrumb {
+    position: sticky;
+    top: 64px;
     padding-left: 165px;
     height: 43px;
     background-color: var(--color-whitishGray);
