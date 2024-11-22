@@ -1,0 +1,37 @@
+// --------------------------------------------------------
+// _breadCrumb.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.c-breadCrumb {
+    padding-left: 165px;
+    height: 43px;
+    background-color: var(--color-whitishGray);
+    display: flex;
+    align-items: center;
+
+    @include b.mq(sp) {
+        padding-left: 15px;
+    }
+
+    &__list {
+        display: flex;
+        @include b.f_montserrat(400);
+        font-size: b.p2r(12);
+        line-height: calc(21.6 / 12);
+        letter-spacing: 0.05em;
+        color: var(--color-lightBlack);
+
+        &__item:not(:last-child) {
+            &::after {
+                content: '>';
+                margin: 0 7px;
+            }
+        }
+
+        &__link {
+            color: var(--color-purple);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// --------------------------------------------------------
+// _subNews.scss
+// --------------------------------------------------------
+
+@use '../../../foundation/base'as b;
+
+.p-subNews {
+    margin: 70px auto 110px;
+    max-width: 750px;
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 40px;
+
+        &__item {
+            display: grid;
+            place-content: center;
+            height: 45px;
+            width: 45px;
+            @include b.f_montserrat(700);
+            font-size: b.p2r(20);
+            letter-spacing: 0.05em;
+            color: white;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom right, #7633A4, #250D65);
+
+            &--active {
+                color: var(--color-lightBlack);
+                background-image: linear-gradient(var(--color-lightPurple), var(--color-lightPurple));
+            }
+        }
+    }
+}

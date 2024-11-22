@@ -8,8 +8,12 @@
 @use 'object/project/works';
 @use 'object/project/company';
 @use 'object/project/recruit';
-@use 'object/project/contact';
+@use 'object/project/subpages/subNews';
 @use 'object/component/button';
 @use 'object/component/heading';
+@use 'object/component/newsList';
+@use 'object/component/contact';
 @use 'object/component/toTop';
+@use 'object/component/subFV';
+@use 'object/component/breadCrumb';
 @use 'object/utility/utility';

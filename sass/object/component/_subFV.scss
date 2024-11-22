@@ -1,0 +1,21 @@
+// --------------------------------------------------------
+// _subFV.scss
+// --------------------------------------------------------
+
+@use '../../foundation/base'as b;
+
+.c-subFV {
+    position: relative;
+    height: 240px;
+    background-image: url(../img/sub_hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading {
+        margin: 0 auto;
+    }
+}
