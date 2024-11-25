@@ -13,6 +13,7 @@
     --color-darkPurple: #21054D;
     --color-lightBlack: #333333;
     --color-lightPurple: #F1EBF8;
+    --color-softPurple: #B8AED5;
 }
 
 html {
@@ -27,7 +28,7 @@ html {
     font-weight: 400;
     line-height: 1;
     font-style: normal;
-    color: #333333;
+    color: var(--color-lightBlack);
     scroll-behavior: smooth;
 }
 
