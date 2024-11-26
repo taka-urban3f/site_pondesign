@@ -1,0 +1,75 @@
+// --------------------------------------------------------
+// _subService.scss
+// --------------------------------------------------------
+
+@use '../../../foundation/base'as b;
+
+.p-subService {
+    margin: 70px auto 110px;
+    max-width: 1170px;
+
+    @include b.mq(sp) {
+        margin: 40px auto 80px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include b.mq(sp) {
+            display: block;
+        }
+
+        &+& {
+            margin-top: 60px;
+
+            @include b.mq(sp) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &__imgCtn {
+        width: 40%;
+
+        @include b.mq(sp) {
+            width: 100%;
+        }
+    }
+
+    &__textCtn {
+        width: 55%;
+
+        @include b.mq(sp) {
+            width: 100%;
+        }
+
+        @include b.mq(sp) {
+            margin-top: 20px;
+        }
+
+        &__heading {
+            @include b.f_zenkakugo(900);
+            font-size: b.p2r(24);
+            line-height: calc(43.2 / 24);
+            letter-spacing: 0.05em;
+
+            @include b.mq(sp) {
+                font-size: b.p2r(18);
+                line-height: calc(21.6 / 18);
+            }
+        }
+
+        &__text {
+            margin-top: 20px;
+            font-size: b.p2r(15);
+            line-height: calc(27 / 15);
+            letter-spacing: 0.05em;
+
+            @include b.mq(sp) {
+                margin-top: 15px;
+                font-size: b.p2r(14);
+            }
+        }
+    }
+}
