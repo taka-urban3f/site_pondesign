@@ -25,6 +25,10 @@
         letter-spacing: 0.05em;
         color: var(--color-lightBlack);
 
+        @include b.mq(sp) {
+            font-size: b.p2r(11);
+        }
+
         &__item:not(:last-child) {
             &::after {
                 content: '>';

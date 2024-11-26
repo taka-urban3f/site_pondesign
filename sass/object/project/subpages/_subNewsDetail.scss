@@ -8,11 +8,19 @@
     margin: 70px auto 110px;
     max-width: 780px;
 
+    @include b.mq(sp) {
+        margin: 40px auto 80px;
+    }
+
     &__pageHeading {
         margin-bottom: 10px;
         font-size: b.p2r(32);
         line-height: calc(48 / 32);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(22);
+        }
     }
 
     &__date {
@@ -20,6 +28,10 @@
         font-size: b.p2r(13);
         line-height: calc(23.4 / 13);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(10);
+        }
     }
 
     &__cat {
@@ -32,15 +44,27 @@
         font-size: b.p2r(12);
         line-height: calc(21.6 / 12);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(11);
+        }
     }
 
     &__catchImg {
         margin: 30px 0;
+
+        @include b.mq(sp) {
+            margin: 20px 0 30px;
+        }
     }
 
     &__intro {
         line-height: calc(28.8 / 16);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(15);
+        }
     }
 
     &__bigHeading {
@@ -51,6 +75,11 @@
         font-size: b.p2r(24);
         line-height: calc(38.4 / 24);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            margin: 13px 0 20px;
+            font-size: b.p2r(18);
+        }
 
         &::before {
             content: '';
@@ -69,12 +98,21 @@
         @include b.f_zenkakugo(900);
         font-size: b.p2r(15);
         line-height: calc(27 / 15);
+
+        @include b.mq(sp) {
+            margin: 0 0 20px;
+        }
     }
 
     &__text {
         margin-bottom: 30px;
         line-height: calc(28.8 / 16);
         letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            margin-bottom: 20px;
+            font-size: b.p2r(15);
+        }
     }
 
     &__snsCtn {
@@ -83,6 +121,10 @@
         flex-wrap: wrap;
         column-gap: 10px;
         row-gap: 10px;
+
+        @include b.mq(sp) {
+            margin: 0;
+        }
     }
 
     &__adjacentNews {
@@ -98,7 +140,7 @@
             font-size: b.p2r(14);
             line-height: calc(25.2 / 14);
             color: var(--color-purple);
-            
+
             &+& {
                 position: relative;
 
@@ -123,5 +165,9 @@
         letter-spacing: 0.05em;
         color: var(--color-purple);
         text-align: center;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(14);
+        }
     }
 }
