@@ -6,11 +6,20 @@
 
 .p-subCompanyMsg {
     margin: 0 auto;
-    max-width: 1440px;
+    padding-top: 100px;
+    max-width: 1300px;
     background-image: url(../img/bg_company.png);
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 90% auto;
+    background-position: center top -50px;
+    background-size: 1300px auto;
+
+    @include b.mq(sp) {
+        padding-top: 60px;
+        background-image: url(../img/bg_circle_sp.png);
+        background-position: center top;
+        background-size: contain;
+
+    }
 
     &__heading {
         font-size: b.p2r(32);
@@ -19,6 +28,11 @@
         letter-spacing: 0.05em;
         color: var(--color-purple);
         text-align: center;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(24);
+            line-height: 1;
+        }
     }
 
     &__catch {
@@ -81,7 +95,35 @@
         text-align: center;
 
         @include b.mq(sp) {
+            margin-bottom: 60px;
             font-size: b.p2r(14);
+        }
+    }
+
+    &__ceoArea {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        column-gap: 50px;
+
+        @include b.mq(sp) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &__imgCtn {
+            flex-basis: 40%;
+        }
+
+        &__ceoMsg {
+            flex: 1;
+            font-size: b.p2r(15);
+            line-height: calc(27 / 15);
+            letter-spacing: 0.05em;
+
+            @include b.mq(sp) {
+                font-size: b.p2r(14);
+            }
         }
     }
 }
