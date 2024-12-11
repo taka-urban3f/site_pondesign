@@ -1,0 +1,62 @@
+// --------------------------------------------------------
+// _subRecruitCatch.scss
+// --------------------------------------------------------
+
+@use '../../../../foundation/base'as b;
+
+.p-subRecruitCatch {
+    padding-top: 90px;
+    text-align: center;
+
+    @include b.mq(sp) {
+        padding-top: 60px;
+    }
+
+    &__main {
+        @include b.f_montserrat(700);
+        font-size: b.p2r(72);
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: var(--color-purple);
+
+        @include b.mq(sp) {
+            font-size: b.p2r(48);
+            line-height: calc(57.6 / 48);
+        }
+    }
+
+    &__sub {
+        margin-top: 10px;
+        font-size: b.p2r(32);
+        line-height: calc(57.6 / 32);
+        letter-spacing: 0.05em;
+        color: var(--color-purple);
+
+        @include b.mq(sp) {
+            font-size: b.p2r(18);
+            line-height: calc(32.4 / 18);
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-size: b.p2r(16);
+        line-height: calc(28.8 / 16);
+        letter-spacing: 0.05em;
+
+        @include b.mq(sp) {
+            margin-top: 16;
+            font-size: b.p2r(15);
+            line-height: calc(27 / 15);
+        }
+    }
+
+    &__imgCtn {
+        margin-top: 40px;
+        clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+
+        @include b.mq(sp) {
+            clip-path: initial;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// --------------------------------------------------------
+// _subRecruitMov.scss
+// --------------------------------------------------------
+
+@use '../../../../foundation/base'as b;
+
+.p-subRecruitMov {
+    padding: 140px 0 110px;
+
+    @include b.mq(sp) {
+        padding: 80px 0 80px;
+    }
+
+    &__heading {
+        font-weight: 900;
+        font-size: b.p2r(32);
+        line-height: 1;
+        letter-spacing: 0.05em;
+        color: var(--color-purple);
+        text-align: center;
+
+        @include b.mq(sp) {
+            font-size: b.p2r(24);
+        }
+    }
+
+    &__mov {
+        margin: 40px auto 0;
+        max-width: 1110px;
+        aspect-ratio: 1.77;
+        background-color: #ebebeb;
+        display: grid;
+        place-content: center;
+
+        @include b.mq(sp) {
+            margin-top: 30px;
+        }
+
+        &__text {
+            font-size: b.p2r(40);
+            color: #a2a2a2;
+
+            @include b.mq(sp) {
+                font-size: b.p2r(24);
+            }
+        }
+    }
+}
