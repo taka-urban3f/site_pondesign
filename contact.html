@@ -53,9 +53,37 @@
             </ol>
         </div>
 
-        <section class="p-subWorks u-wrapper">
-            
-        </section>
+        <div class="p-subContact u-wrapper">
+            <p class="p-subContact__guidance">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+            <div class="p-subContact__box">
+                <form action="">
+                    <span class="p-subContact__capt">お問い合わせ種別<span class="p-subContact__required">*必須</span></span>
+                    <label class="p-subContact__radioCapt"><input type="radio" name="types">お仕事のご依頼・ご相談</label>
+                    <label class="p-subContact__radioCapt"><input type="radio" name="types">お見積りのご依頼</label>
+                    <label class="p-subContact__radioCapt"><input type="radio" name="types">採用について</label>
+                    <label class="p-subContact__radioCapt"><input type="radio" name="types">その他</label>
+
+                    <label for="name" class="p-subContact__capt">お名前<span class="p-subContact__required">*必須</span></label><input type="text" id="name" class="p-subContact__text">
+                    <label for="company" class="p-subContact__capt">会社名<span class="p-subContact__required">*必須</span></label><input type="text" id="name" class="p-subContact__text">
+                    <label for="email" class="p-subContact__capt">メールアドレス<span class="p-subContact__required">*必須</span></label><input type="email" id="name" class="p-subContact__text">
+                    <label for="tel" class="p-subContact__capt">電話番号<span class="p-subContact__note">（半角数字ハイフンなし）</span></label><input type="tel" id="name" class="p-subContact__text">
+
+                    <label for="question" class="p-subContact__capt">お問い合わせ内容</label><textarea id="question" placeholder="お問い合わせ内容を具体的にご記入くださいませ。" class="p-subContact__textarea"></textarea>
+
+                    <label for="where" class="p-subContact__capt">PON DESIGNをどちらでお知りになりましたか？<span class="p-subContact__required">*必須</span></label>
+                    <select name="how" id="where" class="p-subContact__select">
+                        <option value="search" hidden>選択してください</option>
+                        <option value="search">Google/Yahoo検索</option>
+                        <option value="sns">SNS</option>
+                        <option value="blog">ブログ</option>
+                        <option value="friends">友人や知人</option>
+                        <option value="other">その他</option>
+                    </select>
+
+                    <div class="c-button"><input type="submit" value="送信する"></div>
+                </form>
+            </div>
+        </div>
 
         <section class="c-secContact u-wrapper">
             <h2 class="c-heading c-secContact__heading">CONTACT<span class="c-heading__sub">お問い合わせ</span></h2>
